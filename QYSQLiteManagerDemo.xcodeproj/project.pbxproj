@@ -14,6 +14,8 @@
 		1E77ED441B32A6A400DA0F11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E77ED431B32A6A400DA0F11 /* Images.xcassets */; };
 		1E77ED471B32A6A400DA0F11 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E77ED451B32A6A400DA0F11 /* LaunchScreen.xib */; };
 		1E77ED531B32A6A400DA0F11 /* QYSQLiteManagerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E77ED521B32A6A400DA0F11 /* QYSQLiteManagerDemoTests.m */; };
+		1E77ED5F1B32A7A700DA0F11 /* QYSQLiteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E77ED5E1B32A7A700DA0F11 /* QYSQLiteManager.m */; };
+		1E77ED611B32AAB700DA0F11 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E77ED601B32AAB700DA0F11 /* libsqlite3.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		1E77ED4C1B32A6A400DA0F11 /* QYSQLiteManagerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QYSQLiteManagerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E77ED511B32A6A400DA0F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E77ED521B32A6A400DA0F11 /* QYSQLiteManagerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYSQLiteManagerDemoTests.m; sourceTree = "<group>"; };
+		1E77ED5D1B32A7A700DA0F11 /* QYSQLiteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYSQLiteManager.h; sourceTree = "<group>"; };
+		1E77ED5E1B32A7A700DA0F11 /* QYSQLiteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYSQLiteManager.m; sourceTree = "<group>"; };
+		1E77ED601B32AAB700DA0F11 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E77ED611B32AAB700DA0F11 /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,8 @@
 		1E77ED2A1B32A6A400DA0F11 = {
 			isa = PBXGroup;
 			children = (
+				1E77ED601B32AAB700DA0F11 /* libsqlite3.0.dylib */,
+				1E77ED5C1B32A6B900DA0F11 /* QYSQLiteManager */,
 				1E77ED351B32A6A400DA0F11 /* QYSQLiteManagerDemo */,
 				1E77ED4F1B32A6A400DA0F11 /* QYSQLiteManagerDemoTests */,
 				1E77ED341B32A6A400DA0F11 /* Products */,
@@ -117,6 +125,15 @@
 				1E77ED511B32A6A400DA0F11 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1E77ED5C1B32A6B900DA0F11 /* QYSQLiteManager */ = {
+			isa = PBXGroup;
+			children = (
+				1E77ED5D1B32A7A700DA0F11 /* QYSQLiteManager.h */,
+				1E77ED5E1B32A7A700DA0F11 /* QYSQLiteManager.m */,
+			);
+			path = QYSQLiteManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +239,7 @@
 				1E77ED3F1B32A6A400DA0F11 /* ViewController.m in Sources */,
 				1E77ED3C1B32A6A400DA0F11 /* AppDelegate.m in Sources */,
 				1E77ED391B32A6A400DA0F11 /* main.m in Sources */,
+				1E77ED5F1B32A7A700DA0F11 /* QYSQLiteManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
