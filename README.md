@@ -51,5 +51,16 @@
         NSLog(@"更新成功");
     }
 }
+
+// 删除表数据
+-  (void)deleteTableDate
+{
+    NSString *sql = @"delete from teacher where name = ?";
+    if ([QYSQLiteManager deleteTableWithSqlString:sql andArray:@[@"小明"]]) {
+        NSLog(@"删除成功");
+    }else {
+        NSLog(@"删除失败");
+    };
+}
 ```
   
