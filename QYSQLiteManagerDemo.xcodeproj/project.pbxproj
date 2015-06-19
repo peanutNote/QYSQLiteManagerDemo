@@ -13,20 +13,9 @@
 		1E77ED421B32A6A400DA0F11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E77ED401B32A6A400DA0F11 /* Main.storyboard */; };
 		1E77ED441B32A6A400DA0F11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E77ED431B32A6A400DA0F11 /* Images.xcassets */; };
 		1E77ED471B32A6A400DA0F11 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E77ED451B32A6A400DA0F11 /* LaunchScreen.xib */; };
-		1E77ED531B32A6A400DA0F11 /* QYSQLiteManagerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E77ED521B32A6A400DA0F11 /* QYSQLiteManagerDemoTests.m */; };
 		1E77ED5F1B32A7A700DA0F11 /* QYSQLiteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E77ED5E1B32A7A700DA0F11 /* QYSQLiteManager.m */; };
 		1E77ED611B32AAB700DA0F11 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E77ED601B32AAB700DA0F11 /* libsqlite3.0.dylib */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1E77ED4D1B32A6A400DA0F11 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1E77ED2B1B32A6A400DA0F11 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1E77ED321B32A6A400DA0F11;
-			remoteInfo = QYSQLiteManagerDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1E77ED331B32A6A400DA0F11 /* QYSQLiteManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QYSQLiteManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,9 +28,6 @@
 		1E77ED411B32A6A400DA0F11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E77ED431B32A6A400DA0F11 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1E77ED461B32A6A400DA0F11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		1E77ED4C1B32A6A400DA0F11 /* QYSQLiteManagerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QYSQLiteManagerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E77ED511B32A6A400DA0F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E77ED521B32A6A400DA0F11 /* QYSQLiteManagerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYSQLiteManagerDemoTests.m; sourceTree = "<group>"; };
 		1E77ED5D1B32A7A700DA0F11 /* QYSQLiteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYSQLiteManager.h; sourceTree = "<group>"; };
 		1E77ED5E1B32A7A700DA0F11 /* QYSQLiteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYSQLiteManager.m; sourceTree = "<group>"; };
 		1E77ED601B32AAB700DA0F11 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
@@ -56,13 +42,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1E77ED491B32A6A400DA0F11 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -72,7 +51,6 @@
 				1E77ED601B32AAB700DA0F11 /* libsqlite3.0.dylib */,
 				1E77ED5C1B32A6B900DA0F11 /* QYSQLiteManager */,
 				1E77ED351B32A6A400DA0F11 /* QYSQLiteManagerDemo */,
-				1E77ED4F1B32A6A400DA0F11 /* QYSQLiteManagerDemoTests */,
 				1E77ED341B32A6A400DA0F11 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				1E77ED331B32A6A400DA0F11 /* QYSQLiteManagerDemo.app */,
-				1E77ED4C1B32A6A400DA0F11 /* QYSQLiteManagerDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,23 +83,6 @@
 			children = (
 				1E77ED371B32A6A400DA0F11 /* Info.plist */,
 				1E77ED381B32A6A400DA0F11 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		1E77ED4F1B32A6A400DA0F11 /* QYSQLiteManagerDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				1E77ED521B32A6A400DA0F11 /* QYSQLiteManagerDemoTests.m */,
-				1E77ED501B32A6A400DA0F11 /* Supporting Files */,
-			);
-			path = QYSQLiteManagerDemoTests;
-			sourceTree = "<group>";
-		};
-		1E77ED501B32A6A400DA0F11 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				1E77ED511B32A6A400DA0F11 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -156,24 +116,6 @@
 			productReference = 1E77ED331B32A6A400DA0F11 /* QYSQLiteManagerDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1E77ED4B1B32A6A400DA0F11 /* QYSQLiteManagerDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1E77ED591B32A6A400DA0F11 /* Build configuration list for PBXNativeTarget "QYSQLiteManagerDemoTests" */;
-			buildPhases = (
-				1E77ED481B32A6A400DA0F11 /* Sources */,
-				1E77ED491B32A6A400DA0F11 /* Frameworks */,
-				1E77ED4A1B32A6A400DA0F11 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1E77ED4E1B32A6A400DA0F11 /* PBXTargetDependency */,
-			);
-			name = QYSQLiteManagerDemoTests;
-			productName = QYSQLiteManagerDemoTests;
-			productReference = 1E77ED4C1B32A6A400DA0F11 /* QYSQLiteManagerDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -185,10 +127,6 @@
 				TargetAttributes = {
 					1E77ED321B32A6A400DA0F11 = {
 						CreatedOnToolsVersion = 6.3.2;
-					};
-					1E77ED4B1B32A6A400DA0F11 = {
-						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = 1E77ED321B32A6A400DA0F11;
 					};
 				};
 			};
@@ -206,7 +144,6 @@
 			projectRoot = "";
 			targets = (
 				1E77ED321B32A6A400DA0F11 /* QYSQLiteManagerDemo */,
-				1E77ED4B1B32A6A400DA0F11 /* QYSQLiteManagerDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -219,13 +156,6 @@
 				1E77ED421B32A6A400DA0F11 /* Main.storyboard in Resources */,
 				1E77ED471B32A6A400DA0F11 /* LaunchScreen.xib in Resources */,
 				1E77ED441B32A6A400DA0F11 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1E77ED4A1B32A6A400DA0F11 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,23 +173,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1E77ED481B32A6A400DA0F11 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1E77ED531B32A6A400DA0F11 /* QYSQLiteManagerDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1E77ED4E1B32A6A400DA0F11 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1E77ED321B32A6A400DA0F11 /* QYSQLiteManagerDemo */;
-			targetProxy = 1E77ED4D1B32A6A400DA0F11 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1E77ED401B32A6A400DA0F11 /* Main.storyboard */ = {
@@ -381,40 +295,6 @@
 			};
 			name = Release;
 		};
-		1E77ED5A1B32A6A400DA0F11 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = QYSQLiteManagerDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QYSQLiteManagerDemo.app/QYSQLiteManagerDemo";
-			};
-			name = Debug;
-		};
-		1E77ED5B1B32A6A400DA0F11 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = QYSQLiteManagerDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QYSQLiteManagerDemo.app/QYSQLiteManagerDemo";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -434,14 +314,7 @@
 				1E77ED581B32A6A400DA0F11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		1E77ED591B32A6A400DA0F11 /* Build configuration list for PBXNativeTarget "QYSQLiteManagerDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1E77ED5A1B32A6A400DA0F11 /* Debug */,
-				1E77ED5B1B32A6A400DA0F11 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
