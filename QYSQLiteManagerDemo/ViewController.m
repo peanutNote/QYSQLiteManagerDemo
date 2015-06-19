@@ -24,13 +24,16 @@
     // 创建表
     [self createTable];
     // 插入语句
-    [self insertTable];
+//    [self insertTable];
     // 查询语句
 //    [self selectTable];
     // 更新数据
 //    [self updateTable];
     // 查询
 //    [self selectTable];
+    
+    // 删除表数据
+    [self deleteTableDate];
 }
 
 
@@ -54,7 +57,7 @@
     // 不可变参数
 //    BOOL isOK = [QYSQLiteManager insertTableWithSqlString:sql andArray:@[@"小明",@115]];
     // 可变参数
-    BOOL isOK = [QYSQLiteManager insertTableWithSqlString:sql andObjects:@"小明",@"115", nil];
+    BOOL isOK = [QYSQLiteManager insertTableWithSqlString:sql andObjects:@"小明",@115, nil];
     if (isOK) {
         NSLog(@"数据插入成功");
     } else {
@@ -89,6 +92,17 @@
     }
 }
 
+
+// 删除表数据
+-  (void)deleteTableDate
+{
+    NSString *sql = @"delete from teacher where name = ?";
+    if ([QYSQLiteManager deleteTableWithSqlString:sql andArray:@[@"小明"]]) {
+        NSLog(@"删除成功");
+    }else {
+        NSLog(@"删除失败");
+    };
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
