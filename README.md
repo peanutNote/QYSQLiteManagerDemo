@@ -1,6 +1,6 @@
 ## QYSQLiteManager
-*The easiest way to use SQLite
-*使用简单的SQLite操作第三方
+* The easiest way to use SQLite
+* 使用简单的SQLite操作第三方
 
 ## 如何使用QYSQLiteManager
 * Bulid Phases 导入所需的静态库文件*libsqlite3.0.dylib*
