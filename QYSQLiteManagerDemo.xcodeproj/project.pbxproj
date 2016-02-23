@@ -14,7 +14,7 @@
 		1E77ED441B32A6A400DA0F11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E77ED431B32A6A400DA0F11 /* Images.xcassets */; };
 		1E77ED471B32A6A400DA0F11 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E77ED451B32A6A400DA0F11 /* LaunchScreen.xib */; };
 		1E77ED5F1B32A7A700DA0F11 /* QYSQLiteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E77ED5E1B32A7A700DA0F11 /* QYSQLiteManager.m */; };
-		1E77ED611B32AAB700DA0F11 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E77ED601B32AAB700DA0F11 /* libsqlite3.0.dylib */; };
+		1E9F5D8D1C7C5394002CE2EB /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9F5D8C1C7C5394002CE2EB /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,7 @@
 		1E77ED461B32A6A400DA0F11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1E77ED5D1B32A7A700DA0F11 /* QYSQLiteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYSQLiteManager.h; sourceTree = "<group>"; };
 		1E77ED5E1B32A7A700DA0F11 /* QYSQLiteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYSQLiteManager.m; sourceTree = "<group>"; };
-		1E77ED601B32AAB700DA0F11 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		1E9F5D8C1C7C5394002CE2EB /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E77ED611B32AAB700DA0F11 /* libsqlite3.0.dylib in Frameworks */,
+				1E9F5D8D1C7C5394002CE2EB /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +48,7 @@
 		1E77ED2A1B32A6A400DA0F11 = {
 			isa = PBXGroup;
 			children = (
-				1E77ED601B32AAB700DA0F11 /* libsqlite3.0.dylib */,
+				1E9F5D8C1C7C5394002CE2EB /* libsqlite3.0.tbd */,
 				1E77ED5C1B32A6B900DA0F11 /* QYSQLiteManager */,
 				1E77ED351B32A6A400DA0F11 /* QYSQLiteManagerDemo */,
 				1E77ED341B32A6A400DA0F11 /* Products */,
@@ -280,6 +280,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QYSQLiteManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -290,6 +291,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QYSQLiteManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
